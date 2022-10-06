@@ -1,0 +1,6 @@
+.direnv
+.idea
+*.env
+*.iml
+
+/nginx/certs
