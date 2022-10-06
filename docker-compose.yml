@@ -14,6 +14,8 @@ services:
     restart: always
     volumes:
       - "grafana-storage:/var/lib/grafana"
+    env_file:
+      - grafana.env
 
   prometheus:
     image: prom/prometheus:v2.35.0

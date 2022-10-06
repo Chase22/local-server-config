@@ -3,4 +3,6 @@
 *.env
 *.iml
 
+!grafana.env
+
 /nginx/certs
