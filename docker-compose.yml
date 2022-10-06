@@ -24,3 +24,13 @@ services:
       - ../db-data/:/var/lib/postgresql/data/
     env_file:
       - ../env/pg.env
+
+  lte-exporter:
+    image: "registry.gitlab.com/dekarl/fritzbox_exporter"
+    env_file:
+      - ../env/lte-export.env
+
+  dsl-exporter:
+    image: "registry.gitlab.com/dekarl/fritzbox_exporter"
+    env_file:
+      - ../env/dsl-export.env
