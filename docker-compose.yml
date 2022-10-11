@@ -10,7 +10,7 @@ services:
       - "80:80"
 
   grafana:
-    image: grafana/grafana-oss:8.2.6
+    image: grafana/grafana-oss:9.1.8
     restart: always
     volumes:
       - "grafana-storage:/var/lib/grafana"
